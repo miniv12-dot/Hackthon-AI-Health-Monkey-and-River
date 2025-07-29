@@ -1,0 +1,19 @@
+{
+  "name": "ai-health-app",
+  "version": "1.0.0",
+  "description": "AI Health Management System - Full Stack Application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["react", "nodejs", "mysql", "healthcare", "ai"],
+  "author": "AI Health Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
